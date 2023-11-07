@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+html{
+    background-color: #dc3545;
+}
+body{
+    background-color: #d1e4e3;
+}
+header{
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: -2px;
+}
+footer{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #232421;
+}
+section{
+    padding: 40px;
+    min-height: 100vh;
+}
+footer span:nth-of-type(2){
+    font-style: italic;
+}
+.wcc{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;    border-radius: 10px;
+    padding: 0;
+    background-color: black;
+}
+.wcc img{
+    height: 80%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+.wcc-name{
+    background-color: #dc3545;
+    color: white;
+    height: 20%;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: kanit;
+}
+.theme-btn{
+    font-size: 1.6rem;
+    color: #dc3545;
+    background-color: #d1e4e3;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.theme-btn-dark{
+    font-size: 1.6rem;
+    color: #dc3545;
+    background-color: #232421;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.wrapper-dark{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #23242167;
+}
+.top-card{
+    height: 600px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 14;
+}
+#card-cancel{
+    text-align: right;
+    padding-right: 10px;
+    height: 8%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #d1e4e3;
+}
+#cancel-btn{
+    font-weight: 600;
+    font-family: kanit;
+    font-size: 2rem;
+}
+#card-image{
+    background-color: #d1e4e3;
+    height: 47%;
+    background-image: url(img/mclaren.webp);
+    background-position: center;
+    background-size: cover;
+}
+#card-title{
+    background-color: #dc3545;
+    height: 13%;
+}
+#card-desc{
+    background-color: #d1e4e3;
+    height: 32%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
