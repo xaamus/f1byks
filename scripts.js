@@ -7,11 +7,6 @@ setInterval(() => {
             $('#head-title').css('color','#232421');
             $('.wcc-name').css('color','#232421');
             $('footer').css('color','#d1e4e3');
-            $('#card-cancel').css('background-color','#232421');
-            $('#card-cancel').css('color','#d1e4e3');
-            $('#card-title').css('color','#232421');
-            $('#card-desc').css('background-color','#232421');
-            $('#card-desc').css('color','#d1e4e3');
             $('.wcc').find('img').css('filter','brightness(0.85)')
             $('.theme-btn').addClass('theme-btn-dark');
             $('.theme-btn').removeClass('theme-btn');
@@ -26,11 +21,6 @@ setInterval(() => {
             $('#head-title').css('color','#d1e4e3');
             $('.wcc-name').css('color','#d1e4e3');
             $('footer').css('color','#232421');
-            $('#card-cancel').css('background-color','#d1e4e3');
-            $('#card-cancel').css('color','#232421');
-            $('#card-title').css('color','#d1e4e3');
-            $('#card-desc').css('background-color','#d1e4e3');
-            $('#card-desc').css('color','#232421');
             $('.wcc').find('img').css('filter','brightness(1)')
             $('.theme-btn-dark').addClass('theme-btn');
             $('.theme-btn-dark').removeClass('theme-btn-dark');
