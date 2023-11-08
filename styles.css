@@ -66,6 +66,7 @@ footer span:nth-of-type(2){
     border-top-left-radius: 10px;
     cursor: pointer;
     user-select: none;
+    padding-top: 5px;
 }
 .theme-btn-dark{
     font-size: 1.6rem;
@@ -77,6 +78,7 @@ footer span:nth-of-type(2){
     border-top-left-radius: 10px;
     cursor: pointer;
     user-select: none;
+    padding-top: 5px;
 }
 .wrapper-dark{
     position: absolute;
@@ -92,27 +94,16 @@ footer span:nth-of-type(2){
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 14;
-}
-#card-cancel{
-    text-align: right;
-    padding-right: 10px;
-    height: 8%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background-color: #d1e4e3;
-}
-#cancel-btn{
-    font-weight: 600;
-    font-family: kanit;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
+    border-radius: 20px;
+    outline: solid 6px #23242167;
 }
 #card-image{
-    height: 47%;
+    height: 55%;
     background-image: url(/f1byks/img/mclaren.webp);
     background-position: center;
     background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 #card-title{
     background-color: #dc3545;
@@ -122,11 +113,19 @@ footer span:nth-of-type(2){
     align-items: center;
     color: #d1e4e3;
     font-family: kanit;
-    font-size: 2rem;
+    font-size: 4vh;
 }
 #card-desc{
     background-color: #d1e4e3;
     height: 32%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    color: #232421;
+    font-size: 1.3rem;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
 }

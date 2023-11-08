@@ -30,7 +30,7 @@ setInterval(() => {
     
     $('.wrapper-dark').css('height',(document.body.scrollHeight+'px'));
 
-    $('#cancel-btn').click(function(){
+    $('.wrapper-dark').click(function(){
         $('.top-card').remove();
         $('.wrapper-dark').remove();
         $('.active-card').find('.wcc-name').removeClass('active-title')
@@ -44,8 +44,6 @@ $(document).ready(function(){
         $('section').after('<div class="wrapper-dark col-12">') 
         $('.wrapper-dark').show();
         $('section').after('<div class="top-card col-11 col-sm-9 col-md-7 col-lg-5 col-xl-3">')
-        $('.top-card').append('<div id="card-cancel">')
-        $('#card-cancel').append('<span id="cancel-btn">X')
         $('.top-card').append('<div id="card-image">')
         $('.top-card').append('<div id="card-title">')
         $('.top-card').append('<div id="card-desc">')
@@ -54,12 +52,12 @@ $(document).ready(function(){
         $('.active-card').find('img').addClass('active-img')
         $('#card-title').html($('.active-title').text())
         $('#card-image').css('background-image','url('+$('.active-img').attr('src')+')')
+        let team = $('.active-title').text().slice(0,3).toLowerCase()
+        $('#card-desc').html('<span>Kierowca 1: <b>Lando Norris</b></span><br><span>Kierowca 2: <b>Oscar Piastri</b></span><br><span>Punkty: <b>420</b></span>')
     });
 });
 setInterval(()=>{
     if (theme == 'dark'){
-        $('#card-cancel').css('background-color','#232421');
-        $('#card-cancel').css('color','#d1e4e3');
         $('#card-title').css('color','#232421');
         $('#card-desc').css('background-color','#232421');
         $('#card-desc').css('color','#d1e4e3');
@@ -67,8 +65,6 @@ setInterval(()=>{
     }
     
     else if (theme == 'lite'){
-        $('#card-cancel').css('background-color','#d1e4e3');
-        $('#card-cancel').css('color','#232421');
         $('#card-title').css('color','#d1e4e3');
         $('#card-desc').css('background-color','#d1e4e3');
         $('#card-desc').css('color','#232421');
